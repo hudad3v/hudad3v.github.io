@@ -1,366 +1,903 @@
 <!DOCTYPE html>
 <html lang="zxx" dir="ltr">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Salva - Personal Portfolio</title>
-	<link href="../assets/images/logo/Fevicon.ico" rel="icon">
-	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../assets/css/aos.css">
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../assets/css/custom.css">
-	<link rel="stylesheet" type="text/css" href="../assets/css/media-query.css">
-</head>
-<body class="salva-body-wrap salva-page-wrap-light">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Tri Yadi - Personal Portfolio</title>
+    <link href="assets/images/logo/Fevicon.ico" rel="icon" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/aos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/media-query.css" />
+  </head>
+  <body class="salva-body-wrap salva-page-wrap-light">
+    <!--page loader start here -->
+    <div class="overlay">
+      <div class="overlayDoor"></div>
+      <div class="banter-loader">
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+      </div>
+    </div>
 
-	<!--page loader start here -->
-	<div class="overlay">
-		<div class="overlayDoor"></div>
-		<div class="banter-loader">
-			<div class="banter-loader__box"></div>
-			<div class="banter-loader__box"></div>
-			<div class="banter-loader__box"></div>
-			<div class="banter-loader__box"></div>
-			<div class="banter-loader__box"></div>
-			<div class="banter-loader__box"></div>
-			<div class="banter-loader__box"></div>
-			<div class="banter-loader__box"></div>
-			<div class="banter-loader__box"></div>
-		</div>
-	</div>
+    <!--Page Cursor Start here -->
+    <div class="cursor">
+      <div class="cursor__ball cursor__ball--big">
+        <svg height="30" width="30">
+          <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+        </svg>
+      </div>
 
-	<!--Page Cursor Start here -->
-	<div class="cursor">
-		<div class="cursor__ball cursor__ball--big ">
-			<svg height="30" width="30">
-				<circle cx="15" cy="15" r="12" stroke-width="0"></circle>
-			</svg>
-		</div>
+      <div class="cursor__ball cursor__ball--small">
+        <svg height="10" width="10">
+          <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+        </svg>
+      </div>
+    </div>
 
-		<div class="cursor__ball cursor__ball--small">
-			<svg height="10" width="10">
-				<circle cx="5" cy="5" r="4" stroke-width="0"></circle>
-			</svg>
-		</div>
-	</div>
-
-	<!--Salva page content start here -->
-	<div class="salva-page-wrap">
-		<section class="salva-fixed-content" id="contact_us">
-			<div class="container-fluid">
-				<div class="row home-content-row">
-					<!--Left side salva fixed image start here-->
-					<div class="col-12 col-md-5 col-lg-4 col-xxl-5 salva-ripple salva-left-fixed-image p-0">
-						<h1 class="d-none">this is a image of salva fixed</h1>
-						<div class="salva-home-image salva-ripple-image" id="ripple">
-						</div>
-						<div class="salva-weekend-image" id="ripple-two">
-						</div>
-					</div>
-					<!--Left side salva fixed image end here -->
-					<!--right side salva content start here-->
-					<div class="col-12 col-md-12 col-lg-8 col-xxl-7 salva-home-content p-0">
-						<div class="salva-about-wrap">
-							<!--header content start here -->
-							<header class="salva-header">
-								<div class="container-fluid p-0">
-									<div class="row">
-										<div class="col-6 col-sm-6 col-md-4 col-lg-4">
-											<a class="salva-logo" href="home.html">
-												<img src="../assets/images/logo/logo.png" alt="this is a logo of slava">
-											</a>
-										</div>
-										<div class="col-6 col-sm-6 col-md-8 col-lg-8">
-											<nav class="navbar salva-header-nav">
-												<div class="d-flex">
-													<input type="checkbox" id="navcheck" class="navcheck" role="button" title="menu" aria-pressed="true">
-													<label for="navcheck" aria-hidden="true" title="menu">
-														<span class="salv-burger">
-															<span class="bar">
-																<span class="visuallyhidden">Menu</span>
-															</span>
-														</span>
-													</label>
-													<!--desktop screen menu design -->
-													<ul id="menu" class="sal-menu-list">
-														<li class="salv-menu-item">
-															<a href="home.html" target="_self" class="salv-menu-link">Home</a>
-														</li>
-														<li class="salv-menu-item">
-															<a href="about-us.html" target="_self" class="salv-menu-link second-color">About</a>
-														</li>
-														<li class="salv-menu-item">
-															<a href="portfolio.html" target="_self" class="salv-menu-link second-color">Portfolio</a>
-														</li>
-														<li class="salv-menu-item">
-															<a href="news.html" target="_self" class="salv-menu-link second-color">News</a>
-														</li>
-														<li class="salv-menu-item">
-															<a href="contact-us.html" target="_self" class="salv-menu-link active second-color">Contact</a>
-														</li>
-													</ul>
-													<!--tablet screen menu design -->
-													<div class="salv-menu-design-two">
-														<div class="menu-design-wrap">
-															<div class="salv-menu-profile">
-																<img src="../assets/images/homepage/profile-image.png" alt="this is profile image">
-															</div>
-															<div class="sakv-new-menu-social">
-																<ul class="salv-menu-social-list">
-																	<li class="salv-menu-social-icon">
-																		<a href="javascript:void(0);">
-																			<svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-																				<path d="M6.66683 10.2498H8.75016L9.5835 6.9165H6.66683V5.24984C6.66683 4.3915 6.66683 3.58317 8.3335 3.58317H9.5835V0.783171C9.31183 0.747337 8.286 0.666504 7.20266 0.666504C4.94016 0.666504 3.3335 2.04734 3.3335 4.58317V6.9165H0.833496V10.2498H3.3335V17.3332H6.66683V10.2498Z" fill="black"/>
-																			</svg>
-																		</a>
-																	</li>
-																	<li class="salv-menu-social-icon">
-																		<a href="javascript:void(0);">
-																			<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="mask0_101_150" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20"><path d="M0 0H20V20H0V0Z" fill="white"/></mask><g mask="url(#mask0_101_150)"><path d="M18.4683 4.71327C17.8321 4.99468 17.1574 5.1795 16.4666 5.26161C17.1947 4.82613 17.7397 4.14078 17.9999 3.33327C17.3166 3.73994 16.5674 4.02494 15.7866 4.17911C15.2621 3.61792 14.5669 3.24574 13.8091 3.12043C13.0512 2.99511 12.2732 3.12368 11.596 3.48615C10.9187 3.84862 10.3802 4.42468 10.0642 5.12477C9.74812 5.82486 9.67221 6.60976 9.84826 7.35744C8.46251 7.28798 7.10687 6.92788 5.86933 6.30049C4.63179 5.67311 3.54003 4.79248 2.66492 3.71577C2.35516 4.24781 2.19238 4.85263 2.19326 5.46827C2.19326 6.67661 2.80826 7.74411 3.74326 8.36911C3.18993 8.35169 2.64878 8.20226 2.16492 7.93327V7.9766C2.16509 8.78136 2.44356 9.56129 2.95313 10.1842C3.46269 10.807 4.17199 11.2345 4.96076 11.3941C4.4471 11.5333 3.90851 11.5538 3.38576 11.4541C3.60814 12.1468 4.04159 12.7526 4.62542 13.1867C5.20924 13.6208 5.9142 13.8614 6.64159 13.8749C5.91866 14.4427 5.0909 14.8624 4.20566 15.1101C3.32041 15.3577 2.39503 15.4285 1.48242 15.3183C3.0755 16.3428 4.93 16.8867 6.82409 16.8849C13.2349 16.8849 16.7408 11.5741 16.7408 6.96827C16.7408 6.81827 16.7366 6.66661 16.7299 6.51827C17.4123 6.02508 18.0013 5.41412 18.4691 4.71411L18.4683 4.71327Z" fill="black"/>
-																			</g></svg>
-																		</a>
-																	</li>
-																	<li class="salv-menu-social-icon">
-																		<a href="javascript:void(0);">
-																			<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="mask0_101_153" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20"><path d="M0 0H20V20H0V0Z" fill="white"/></mask><g mask="url(#mask0_101_153)"><path d="M9.99984 7.49984C9.3368 7.49984 8.70091 7.76323 8.23207 8.23207C7.76323 8.70091 7.49984 9.3368 7.49984 9.99984C7.49984 10.6629 7.76323 11.2988 8.23207 11.7676C8.70091 12.2364 9.3368 12.4998 9.99984 12.4998C10.6629 12.4998 11.2988 12.2364 11.7676 11.7676C12.2364 11.2988 12.4998 10.6629 12.4998 9.99984C12.4998 9.3368 12.2364 8.70091 11.7676 8.23207C11.2988 7.76323 10.6629 7.49984 9.99984 7.49984ZM9.99984 5.83317C11.1049 5.83317 12.1647 6.27216 12.9461 7.05356C13.7275 7.83496 14.1665 8.89477 14.1665 9.99984C14.1665 11.1049 13.7275 12.1647 12.9461 12.9461C12.1647 13.7275 11.1049 14.1665 9.99984 14.1665C8.89477 14.1665 7.83496 13.7275 7.05356 12.9461C6.27216 12.1647 5.83317 11.1049 5.83317 9.99984C5.83317 8.89477 6.27216 7.83496 7.05356 7.05356C7.83496 6.27216 8.89477 5.83317 9.99984 5.83317ZM15.4165 5.62484C15.4165 5.9011 15.3068 6.16606 15.1114 6.36141C14.9161 6.55676 14.6511 6.6665 14.3748 6.6665C14.0986 6.6665 13.8336 6.55676 13.6383 6.36141C13.4429 6.16606 13.3332 5.9011 13.3332 5.62484C13.3332 5.34857 13.4429 5.08362 13.6383 4.88827C13.8336 4.69292 14.0986 4.58317 14.3748 4.58317C14.6511 4.58317 14.9161 4.69292 15.1114 4.88827C15.3068 5.08362 15.4165 5.34857 15.4165 5.62484ZM9.99984 3.33317C7.93817 3.33317 7.6015 3.339 6.64234 3.3815C5.989 3.41234 5.55067 3.49984 5.144 3.65817C4.78234 3.79817 4.5215 3.96567 4.244 4.244C3.98318 4.496 3.78263 4.80366 3.65734 5.144C3.499 5.55234 3.4115 5.98984 3.3815 6.64234C3.33817 7.56234 3.33317 7.884 3.33317 9.99984C3.33317 12.0615 3.339 12.3982 3.3815 13.3573C3.41234 14.0098 3.49984 14.449 3.65734 14.8548C3.799 15.2173 3.96567 15.4782 4.24234 15.7548C4.52317 16.0348 4.784 16.2023 5.14234 16.3407C5.554 16.4998 5.99234 16.5882 6.64234 16.6182C7.56234 16.6615 7.884 16.6665 9.99984 16.6665C12.0615 16.6665 12.3982 16.6607 13.3573 16.6182C14.009 16.5873 14.4482 16.4998 14.8548 16.3423C15.2157 16.2015 15.4782 16.034 15.7548 15.7573C16.0357 15.4765 16.2032 15.2157 16.3415 14.8573C16.4998 14.4465 16.5882 14.0073 16.6182 13.3573C16.6615 12.4373 16.6665 12.1157 16.6665 9.99984C16.6665 7.93817 16.6607 7.6015 16.6182 6.64234C16.5873 5.99067 16.4998 5.55067 16.3415 5.144C16.2159 4.80401 16.0157 4.49647 15.7557 4.244C15.5038 3.98304 15.1961 3.78248 14.8557 3.65734C14.4473 3.499 14.009 3.4115 13.3573 3.3815C12.4373 3.33817 12.1157 3.33317 9.99984 3.33317ZM9.99984 1.6665C12.264 1.6665 12.5465 1.67484 13.4348 1.7165C14.3223 1.75817 14.9265 1.89734 15.4582 2.104C16.0082 2.31567 16.4715 2.60234 16.9348 3.06484C17.3586 3.48142 17.6865 3.98533 17.8957 4.5415C18.1015 5.07234 18.2415 5.67734 18.2832 6.56484C18.3223 7.45317 18.3332 7.73567 18.3332 9.99984C18.3332 12.264 18.3248 12.5465 18.2832 13.4348C18.2415 14.3223 18.1015 14.9265 17.8957 15.4582C17.6871 16.0147 17.3591 16.5187 16.9348 16.9348C16.5181 17.3584 16.0143 17.6863 15.4582 17.8957C14.9273 18.1015 14.3223 18.2415 13.4348 18.2832C12.5465 18.3223 12.264 18.3332 9.99984 18.3332C7.73567 18.3332 7.45317 18.3248 6.56484 18.2832C5.67734 18.2415 5.07317 18.1015 4.5415 17.8957C3.98511 17.6869 3.48111 17.359 3.06484 16.9348C2.64101 16.5183 2.31311 16.0144 2.104 15.4582C1.89734 14.9273 1.75817 14.3223 1.7165 13.4348C1.67734 12.5465 1.6665 12.264 1.6665 9.99984C1.6665 7.73567 1.67484 7.45317 1.7165 6.56484C1.75817 5.6765 1.89734 5.07317 2.104 4.5415C2.31253 3.98499 2.64051 3.48094 3.06484 3.06484C3.48123 2.64086 3.98519 2.31295 4.5415 2.104C5.07317 1.89734 5.6765 1.75817 6.56484 1.7165C7.45317 1.67734 7.73567 1.6665 9.99984 1.6665Z" fill="black"/></g></svg>
-																		</a>
-																	</li>
-																	<li class="salv-menu-social-icon">
-																		<a href="javascript:void(0);">
-																			<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="mask0_101_156" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20"><path d="M0 0H20V20H0V0Z" fill="white"/></mask><g mask="url(#mask0_101_156)"><path d="M5.78353 4.16652C5.78331 4.60855 5.6075 5.03239 5.29478 5.34479C4.98207 5.6572 4.55806 5.83258 4.11603 5.83236C3.674 5.83214 3.25017 5.65633 2.93776 5.34361C2.62536 5.0309 2.44997 4.60688 2.4502 4.16486C2.45042 3.72283 2.62622 3.29899 2.93894 2.98659C3.25166 2.67419 3.67567 2.4988 4.1177 2.49902C4.55972 2.49924 4.98356 2.67505 5.29596 2.98777C5.60837 3.30049 5.78375 3.7245 5.78353 4.16652ZM5.83353 7.06652H2.5002V17.4999H5.83353V7.06652ZM11.1002 7.06652H7.78353V17.4999H11.0669V12.0249C11.0669 8.97486 15.0419 8.69152 15.0419 12.0249V17.4999H18.3335V10.8915C18.3335 5.74986 12.4502 5.94152 11.0669 8.46652L11.1002 7.06652Z" fill="black"/></g></svg>
-																		</a>
-																	</li>
-																</ul>
-															</div>
-															<div class="salv-menu-list">
-																<ul class="salv-sec-menu-item">
-																	<li class="salv-sec-menu-link">
-																		<a href="home.html" class="slav-tb-menu-name" target="_self">home</a>
-																	</li>
-																	<li class="salv-sec-menu-link">
-																		<a href="about-us.html" target="_self" class="slav-tb-menu-name">about</a>
-																	</li>
-																	<li class="salv-sec-menu-link">
-																		<a href="portfolio.html" target="_self" class="slav-tb-menu-name">portfolio</a>
-																	</li>
-																	<li class="salv-sec-menu-link">
-																		<a href="news.html" target="_self" class="slav-tb-menu-name">news</a>
-																	</li>
-																	<li class="salv-sec-menu-link">
-																		<a href="contact-us.html" target="_self" class="slav-tb-menu-name active">contact</a>
-																	</li>
-																</ul>
-															</div>
-															<div class="salv-mob-copyright">
-																<p class="salv-copyright-content mb-0 sm-font inter-font-400 b-text light-copyright">Copyright © 2023 Salva ❤ <a href="https://themeforest.net/user/the_krishna/portfolio" class="b-text" target="_blank">the_krishna</a></p>
-															</div>
-														</div>
-													</div>
-												</div>
-											</nav>
-										</div>
-									</div>
-								</div>
-							</header>
-							<!--contact us content start here -->
-							<div class="salva-contact-us-content weekend-mode-hide">
-								<div class="salv-inrto-content">
-									<h2 class="salv-about-title salv-home-title md-font b-text inter-font-900 mb-0" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">Contact</h2>
-									<p class="salv-about-desc mb-0 second-color inter-font-400"  data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim laboris nisi ut aliquip ex ea commodo consequat.</p>
-								</div>
-								<!--get in touch content start here -->
-								<div class="salv-cont-get-in">
-									<h3 class="salv-about-personla-title mb-0 b-text sm-md-font inter-font-700">get in touch</h3>
-									<div class="salv-get-row row">
-										<div class="col-12 col-sm-4 col-md-4 col-lg-4 mail-cont-col">
-											<div class="sal-get-in-wrap">
-												<div class="salv-get-icon">
-													<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M39.625 12C41.4531 12 43 13.5469 43 15.375C43 16.5 42.4375 17.4844 41.5938 18.1172L26.3359 29.5781C25.4922 30.2109 24.4375 30.2109 23.5938 29.5781L8.33594 18.1172C7.49219 17.4844 7 16.5 7 15.375C7 13.5469 8.47656 12 10.375 12H39.625ZM22.2578 31.4062C23.875 32.6016 26.0547 32.6016 27.6719 31.4062L43 19.875V34.5C43 37.0312 40.9609 39 38.5 39H11.5C8.96875 39 7 37.0312 7 34.5V19.875L22.2578 31.4062Z" fill="black"/>
-													</svg>
-												</div>
-												<div class="salv-get-in-title">
-													<a href="mailto:hello@salva.com" class="sal-get-mail inter-font-500 sm-md-font">hello@salva.com</a>
-												</div>
-												<div class="go-corner"><div class="go-arrow"></div></div>
-											</div>
-										</div>
-										<div class="col-12 col-sm-4 col-md-4 col-lg-4 mail-phone-col">
-											<div class="sal-get-in-wrap">
-												<div class="salv-get-icon">
-													<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M34.5 7.5H16.5C14.6016 7.5 13.125 9.04688 13.125 10.875V40.125C13.125 42.0234 14.6016 43.5 16.5 43.5H34.5C36.3281 43.5 37.875 42.0234 37.875 40.125V10.875C37.875 9.04688 36.3281 7.5 34.5 7.5ZM25.5 40.125C24.2344 40.125 23.25 39.1406 23.25 37.875C23.25 36.6797 24.2344 35.625 25.5 35.625C26.6953 35.625 27.75 36.6797 27.75 37.875C27.75 39.1406 26.6953 40.125 25.5 40.125Z" fill="black"/>
-													</svg>
-												</div>
-												<div class="salv-get-in-title">
-													<a href="tel:+202345678899" class="sal-get-mail inter-font-500 sm-md-font">+20 234 567 8899</a>
-												</div>
-												<div class="go-corner"><div class="go-arrow"></div></div>
-											</div>
-										</div>
-										<div class="col-12 col-sm-4 col-md-4 col-lg-4 mail-addr-col">
-											<div class="sal-get-in-wrap">
-												<div class="salv-get-icon">
-													<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M23.8125 42.6562C20.1562 38.0859 12 27.1875 12 21C12 13.5469 17.9766 7.5 25.5 7.5C32.9531 7.5 39 13.5469 39 21C39 27.1875 30.7734 38.0859 27.1172 42.6562C26.2734 43.7109 24.6562 43.7109 23.8125 42.6562ZM25.5 25.5C27.9609 25.5 30 23.5312 30 21C30 18.5391 27.9609 16.5 25.5 16.5C22.9688 16.5 21 18.5391 21 21C21 23.5312 22.9688 25.5 25.5 25.5Z" fill="black"/>
-													</svg>
-												</div>
-												<div class="salv-get-in-title">
-													<span class="sal-get-mail inter-font-500 sm-md-font">121 Victoria St. London</span>
-												</div>
-												<div class="go-corner"><div class="go-arrow"></div></div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!--message me content start here -->
-								<div class="salv-message-me">
-									<h4 class="salv-about-personla-title mb-0 b-text sm-md-font inter-font-700">message me</h4>
-									<div class="salv-message-me row">
-										<div class="col-12 col-sm-6 col-md-6 col-lg-6 map-contact-form-col">
-											<div class="formbold-main-wrapper">
-												<div class="formbold-form-wrapper">
-													<form method="POST" class="salv-conatct-us">
-														<div class="formbold-mb-5 salv-contact-field">
-															<input type="text" name="name" id="name" placeholder="Name" class="formbold-form-input inter-font-500" required>
-															<span class="salv-field-icon">
-																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_101_727)"><path d="M2 18C2 16.1814 2.72245 14.4372 4.00841 13.1513C5.29437 11.8653 7.03852 11.1429 8.85714 11.1429C10.6758 11.1429 12.4199 11.8653 13.7059 13.1513C14.9918 14.4372 15.7143 16.1814 15.7143 18H14C14 16.636 13.4582 15.3279 12.4937 14.3635C11.5292 13.399 10.2211 12.8571 8.85714 12.8571C7.49317 12.8571 6.18507 13.399 5.22059 14.3635C4.25612 15.3279 3.71429 16.636 3.71429 18H2ZM8.85714 10.2857C6.01571 10.2857 3.71429 7.98429 3.71429 5.14286C3.71429 2.30143 6.01571 0 8.85714 0C11.6986 0 14 2.30143 14 5.14286C14 7.98429 11.6986 10.2857 8.85714 10.2857ZM8.85714 8.57143C10.7514 8.57143 12.2857 7.03714 12.2857 5.14286C12.2857 3.24857 10.7514 1.71429 8.85714 1.71429C6.96286 1.71429 5.42857 3.24857 5.42857 5.14286C5.42857 7.03714 6.96286 8.57143 8.85714 8.57143Z" fill="black"/></g><defs><clipPath id="clip0_101_727"><rect width="18" height="18" fill="#ffffff"/></clipPath></defs></svg>
-															</span>
-															<div class="salv-input-bar-line"></div>
-														</div>
-														<div class="formbold-mb-5 salv-contact-field">
-															<input type="email" name="email" id="email" placeholder="Email" class="formbold-form-input inter-font-500" required>
-															<div class="salv-input-bar-line"></div>
-															<span class="salv-field-icon">
-																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_101_734)"><path d="M0.9 1H17.1C17.3387 1 17.5676 1.09482 17.7364 1.2636C17.9052 1.43239 18 1.66131 18 1.9V16.3C18 16.5387 17.9052 16.7676 17.7364 16.9364C17.5676 17.1052 17.3387 17.2 17.1 17.2H0.9C0.661305 17.2 0.432387 17.1052 0.263604 16.9364C0.0948211 16.7676 0 16.5387 0 16.3V1.9C0 1.66131 0.0948211 1.43239 0.263604 1.2636C0.432387 1.09482 0.661305 1 0.9 1ZM16.2 4.8142L9.0648 11.2042L1.8 4.7944V15.4H16.2V4.8142ZM2.2599 2.8L9.0549 8.7958L15.7518 2.8H2.2599Z" fill="black"/></g><defs><clipPath id="clip0_101_734"><rect width="18" height="18" fill="#ffffff"/></clipPath></defs></svg>
-															</span>
-														</div>
-														<div class="formbold-mb-5 salv-contact-field">
-															<input type="text" name="subject" id="subject" placeholder="Subject" class="formbold-form-input inter-font-500" required>
-															<div class="salv-input-bar-line"></div>
-															<span class="salv-field-icon">
-																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_101_741)"><path d="M12.7487 6.66761L11.3324 5.25131L2.00325 14.5805V15.9967H3.41955L12.7487 6.66761ZM14.165 5.25131L15.5813 3.83501L14.165 2.41871L12.7487 3.83501L14.165 5.25131ZM4.2489 18H0V13.7501L13.4568 0.293263C13.6447 0.105487 13.8994 0 14.165 0C14.4306 0 14.6853 0.105487 14.8731 0.293263L17.7067 3.12686C17.8945 3.31469 18 3.56942 18 3.83501C18 4.10061 17.8945 4.35533 17.7067 4.54316L4.2499 18H4.2489Z" fill="black"/></g><defs><clipPath id="clip0_101_741"><rect width="18" height="18" fill="#ffffff"/></clipPath></defs></svg>
-															</span>
-														</div>
-														<div class="formbold-mb-5 salv-contact-field">
-															<textarea rows="4" cols="12" name="message" id="message" placeholder="Message" class="formbold-form-input inter-font-500"></textarea>
-															<div class="salv-input-bar-line textarea-line"></div>
-															<span class="salv-field-icon">
-																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_101_748)"><path d="M14.3102 9.1406L13.6288 8.45926L4.08807 18H0V13.911L10.9025 3.00754L16.3542 8.45926C16.5349 8.63998 16.6363 8.88506 16.6363 9.1406C16.6363 9.39614 16.5349 9.64122 16.3542 9.82194L9.54074 16.6363L8.17709 15.2737L14.3102 9.1406ZM12.2661 7.09657L10.9025 5.73388L1.92742 14.7089V16.0726H3.29011L12.2661 7.09657ZM14.9915 0.282162L17.7178 3.00754C17.8985 3.18826 18 3.43334 18 3.68888C18 3.94442 17.8985 4.1895 17.7178 4.37023L16.3542 5.73388L12.2661 1.64485L13.6288 0.282162C13.8095 0.101494 14.0546 0 14.3102 0C14.5657 0 14.8108 0.101494 14.9915 0.282162Z" fill="black"/></g><defs><clipPath id="clip0_101_748"><rect width="18" height="18" fill="#ffffff"/></clipPath></defs></svg>
-															</span>
-														</div>
-														<div>
-															<!-- <button class="formbold-btn salv-send-btn w-text inter-font-600 sm-font">salv-send-btn</button> -->
-															<button class="salv-home-get-touch salv-send-btn">
-																<span class="salv-get-text">send message</span>
-															</button>
-														</div>
-													</form>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-md-6 col-lg-6 map-img-col">
-											<div class="salv-contat-us-map">
-												<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3152.332975548547!2d144.9601134!3d-37.805669!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642ccdc6aaaab%3A0x2173400951f0012c!2sLevel%203%2F551%20Swanston%20St%2C%20Carlton%20VIC%203053%2C%20Australia!5e0!3m2!1sen!2sin!4v1673948052812!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!--weekend-mode start here-->
-							<div class="salva-weekend-mode" id="weekend_mode">
-								<div class="salv-inrto-content">
-									<h5 class="salv-about-title salv-home-title md-font b-text inter-font-900 mb-0">Me on Weekends 😎</h5>
-								</div>
-								<div class="salv-week-desc">
-									<p class="mt-0 mb-0 sal-week-desc-one inter-font-400 sm-md-font-two">
-										Sagittis sed quam platea dignissim et tincidunt vitae tortor viverra. Bibendum et, elementum senectus quam venenatis sapien. Tincidunt erat faucibus risus et libero, semper ultrices imperdiet. Iaculis est ultrices egestas sem tempor aliquet quis. Quis in dui urna sapien, egestas non eu.
-									</p>
-									<p class="mb-0 mt-0 sal-week-desc-two inter-font-400 sm-md-font-two">
-										Velit commodo orci feugiat tellus purus. Aliquet nam proin vitae amet sit tristique sollicitudin massa vulputate. Non augue nunc nulla augue fringilla. Tempus pellentesque venenatis elit porttitor. Viverra massa augue varius vitae sapien, non nibh. In donec aliquet vulputate massa at massa, congue feugiat leo. Magna massa sit pellentesque morbi turpis aliquam a quis massa. Sodales donec diam velit duis tristique. Purus eu fermentum, mi dignissim morbi. Ornare consectetur eget at id in. Erat facilisis id sed donec iaculis. Sed eget mattis purus facilisis quis viverra arcu. Amet lorem sed leo vulputate sit ultricies urna. Sagittis ullamcorper pharetra diam scelerisque arcu. At lacinia quam turpis purus purus, nunc semper tortor sed.
-									</p>
-									<p class="mt-0 mb-0 sal-week-desc-three inter-font-400 sm-md-font-two">
-										Arcu lectus porttitor vel, et. Etiam nulla est tortor adipiscing. Fermentum pretium massa pharetra, id aliquam. Morbi dignissim et ut odio volutpat porttitor ac. Consectetur dictum cursus ultrices sed scelerisque. Ut pharetra, aliquam aliquet feugiat duis semper interdum sed quam. Elementum egestas lacus, a vitae orci rutrum. Neque lorem orci dui, fermentum. Risus aliquam nibh habitasse justo amet.
-									</p>
-								</div>
-								<div class="salv-drop-mail">
-									<div class="salv-drop-mail-wrap">
-										<h6 class="mb-0 drop-mail-title inter-font-400">Drop Your Mail:</h6>
-										<a href="mailto:hello@salva.com" class="salv-mail-text inter-font-900">hello@salva.com</a>
-									</div>
-								</div>
-							</div>
-							<!--social icon start here -->
-							<div class="salv-social-wrap">
-								<div class="salv-social-content">
-									<ul class="salv-social-list">
-										<li class="salv-social-icon">
-											<a href="javascript:void(0);">
-												<svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M6.66683 10.2498H8.75016L9.5835 6.9165H6.66683V5.24984C6.66683 4.3915 6.66683 3.58317 8.3335 3.58317H9.5835V0.783171C9.31183 0.747337 8.286 0.666504 7.20266 0.666504C4.94016 0.666504 3.3335 2.04734 3.3335 4.58317V6.9165H0.833496V10.2498H3.3335V17.3332H6.66683V10.2498Z" fill="black"></path>
-												</svg>
-											</a>
-										</li>
-										<li class="salv-social-icon">
-											<a href="javascript:void(0);">
-												<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="mask0_601_150" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20"><path d="M0 0H20V20H0V0Z" fill="white"></path></mask><g mask="url(#mask0_601_150)"><path d="M18.4683 4.71327C17.8321 4.99468 17.1574 5.1795 16.4666 5.26161C17.1947 4.82613 17.7397 4.14078 17.9999 3.33327C17.3166 3.73994 16.5674 4.02494 15.7866 4.17911C15.2621 3.61792 14.5669 3.24574 13.8091 3.12043C13.0512 2.99511 12.2732 3.12368 11.596 3.48615C10.9187 3.84862 10.3802 4.42468 10.0642 5.12477C9.74812 5.82486 9.67221 6.60976 9.84826 7.35744C8.46251 7.28798 7.10687 6.92788 5.86933 6.30049C4.63179 5.67311 3.54003 4.79248 2.66492 3.71577C2.35516 4.24781 2.19238 4.85263 2.19326 5.46827C2.19326 6.67661 2.80826 7.74411 3.74326 8.36911C3.18993 8.35169 2.64878 8.20226 2.16492 7.93327V7.9766C2.16509 8.78136 2.44356 9.56129 2.95313 10.1842C3.46269 10.807 4.17199 11.2345 4.96076 11.3941C4.4471 11.5333 3.90851 11.5538 3.38576 11.4541C3.60814 12.1468 4.04159 12.7526 4.62542 13.1867C5.20924 13.6208 5.9142 13.8614 6.64159 13.8749C5.91866 14.4427 5.0909 14.8624 4.20566 15.1101C3.32041 15.3577 2.39503 15.4285 1.48242 15.3183C3.0755 16.3428 4.93 16.8867 6.82409 16.8849C13.2349 16.8849 16.7408 11.5741 16.7408 6.96827C16.7408 6.81827 16.7366 6.66661 16.7299 6.51827C17.4123 6.02508 18.0013 5.41412 18.4691 4.71411L18.4683 4.71327Z" fill="black"></path>
-												</g></svg>
-											</a>
-										</li>
-										<li class="salv-social-icon">
-											<a href="javascript:void(0);">
-												<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="mask0_602_153" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20"><path d="M0 0H20V20H0V0Z" fill="white"></path></mask><g mask="url(#mask0_602_153)"><path d="M9.99984 7.49984C9.3368 7.49984 8.70091 7.76323 8.23207 8.23207C7.76323 8.70091 7.49984 9.3368 7.49984 9.99984C7.49984 10.6629 7.76323 11.2988 8.23207 11.7676C8.70091 12.2364 9.3368 12.4998 9.99984 12.4998C10.6629 12.4998 11.2988 12.2364 11.7676 11.7676C12.2364 11.2988 12.4998 10.6629 12.4998 9.99984C12.4998 9.3368 12.2364 8.70091 11.7676 8.23207C11.2988 7.76323 10.6629 7.49984 9.99984 7.49984ZM9.99984 5.83317C11.1049 5.83317 12.1647 6.27216 12.9461 7.05356C13.7275 7.83496 14.1665 8.89477 14.1665 9.99984C14.1665 11.1049 13.7275 12.1647 12.9461 12.9461C12.1647 13.7275 11.1049 14.1665 9.99984 14.1665C8.89477 14.1665 7.83496 13.7275 7.05356 12.9461C6.27216 12.1647 5.83317 11.1049 5.83317 9.99984C5.83317 8.89477 6.27216 7.83496 7.05356 7.05356C7.83496 6.27216 8.89477 5.83317 9.99984 5.83317ZM15.4165 5.62484C15.4165 5.9011 15.3068 6.16606 15.1114 6.36141C14.9161 6.55676 14.6511 6.6665 14.3748 6.6665C14.0986 6.6665 13.8336 6.55676 13.6383 6.36141C13.4429 6.16606 13.3332 5.9011 13.3332 5.62484C13.3332 5.34857 13.4429 5.08362 13.6383 4.88827C13.8336 4.69292 14.0986 4.58317 14.3748 4.58317C14.6511 4.58317 14.9161 4.69292 15.1114 4.88827C15.3068 5.08362 15.4165 5.34857 15.4165 5.62484ZM9.99984 3.33317C7.93817 3.33317 7.6015 3.339 6.64234 3.3815C5.989 3.41234 5.55067 3.49984 5.144 3.65817C4.78234 3.79817 4.5215 3.96567 4.244 4.244C3.98318 4.496 3.78263 4.80366 3.65734 5.144C3.499 5.55234 3.4115 5.98984 3.3815 6.64234C3.33817 7.56234 3.33317 7.884 3.33317 9.99984C3.33317 12.0615 3.339 12.3982 3.3815 13.3573C3.41234 14.0098 3.49984 14.449 3.65734 14.8548C3.799 15.2173 3.96567 15.4782 4.24234 15.7548C4.52317 16.0348 4.784 16.2023 5.14234 16.3407C5.554 16.4998 5.99234 16.5882 6.64234 16.6182C7.56234 16.6615 7.884 16.6665 9.99984 16.6665C12.0615 16.6665 12.3982 16.6607 13.3573 16.6182C14.009 16.5873 14.4482 16.4998 14.8548 16.3423C15.2157 16.2015 15.4782 16.034 15.7548 15.7573C16.0357 15.4765 16.2032 15.2157 16.3415 14.8573C16.4998 14.4465 16.5882 14.0073 16.6182 13.3573C16.6615 12.4373 16.6665 12.1157 16.6665 9.99984C16.6665 7.93817 16.6607 7.6015 16.6182 6.64234C16.5873 5.99067 16.4998 5.55067 16.3415 5.144C16.2159 4.80401 16.0157 4.49647 15.7557 4.244C15.5038 3.98304 15.1961 3.78248 14.8557 3.65734C14.4473 3.499 14.009 3.4115 13.3573 3.3815C12.4373 3.33817 12.1157 3.33317 9.99984 3.33317ZM9.99984 1.6665C12.264 1.6665 12.5465 1.67484 13.4348 1.7165C14.3223 1.75817 14.9265 1.89734 15.4582 2.104C16.0082 2.31567 16.4715 2.60234 16.9348 3.06484C17.3586 3.48142 17.6865 3.98533 17.8957 4.5415C18.1015 5.07234 18.2415 5.67734 18.2832 6.56484C18.3223 7.45317 18.3332 7.73567 18.3332 9.99984C18.3332 12.264 18.3248 12.5465 18.2832 13.4348C18.2415 14.3223 18.1015 14.9265 17.8957 15.4582C17.6871 16.0147 17.3591 16.5187 16.9348 16.9348C16.5181 17.3584 16.0143 17.6863 15.4582 17.8957C14.9273 18.1015 14.3223 18.2415 13.4348 18.2832C12.5465 18.3223 12.264 18.3332 9.99984 18.3332C7.73567 18.3332 7.45317 18.3248 6.56484 18.2832C5.67734 18.2415 5.07317 18.1015 4.5415 17.8957C3.98511 17.6869 3.48111 17.359 3.06484 16.9348C2.64101 16.5183 2.31311 16.0144 2.104 15.4582C1.89734 14.9273 1.75817 14.3223 1.7165 13.4348C1.67734 12.5465 1.6665 12.264 1.6665 9.99984C1.6665 7.73567 1.67484 7.45317 1.7165 6.56484C1.75817 5.6765 1.89734 5.07317 2.104 4.5415C2.31253 3.98499 2.64051 3.48094 3.06484 3.06484C3.48123 2.64086 3.98519 2.31295 4.5415 2.104C5.07317 1.89734 5.6765 1.75817 6.56484 1.7165C7.45317 1.67734 7.73567 1.6665 9.99984 1.6665Z" fill="black"></path></g></svg>
-											</a>
-										</li>
-										<li class="salv-social-icon">
-											<a href="javascript:void(0);">
-												<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="mask0_604_156" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20"><path d="M0 0H20V20H0V0Z" fill="white"></path></mask><g mask="url(#mask0_604_156)"><path d="M5.78353 4.16652C5.78331 4.60855 5.6075 5.03239 5.29478 5.34479C4.98207 5.6572 4.55806 5.83258 4.11603 5.83236C3.674 5.83214 3.25017 5.65633 2.93776 5.34361C2.62536 5.0309 2.44997 4.60688 2.4502 4.16486C2.45042 3.72283 2.62622 3.29899 2.93894 2.98659C3.25166 2.67419 3.67567 2.4988 4.1177 2.49902C4.55972 2.49924 4.98356 2.67505 5.29596 2.98777C5.60837 3.30049 5.78375 3.7245 5.78353 4.16652ZM5.83353 7.06652H2.5002V17.4999H5.83353V7.06652ZM11.1002 7.06652H7.78353V17.4999H11.0669V12.0249C11.0669 8.97486 15.0419 8.69152 15.0419 12.0249V17.4999H18.3335V10.8915C18.3335 5.74986 12.4502 5.94152 11.0669 8.46652L11.1002 7.06652Z" fill="black"></path></g></svg>
-											</a>
-										</li>
-									</ul>
-									<div class="salv-follow-us-content second-color ex-sm-font inter-font-600">follow me</div>
-								</div>
-							</div>
-							<!--footer content start here -->
-							<footer class="salv-footer-content" id="slv-footer">
-								<div class="salv-footer-wrap">
-									<p class="salv-copyright-content mb-0 sm-font inter-font-400 b-text light-copyright">Copyright © 2023 Salva ❤ <a href="https://themeforest.net/user/the_krishna/portfolio" class="b-text" target="_blank">the_krishna</a></p>
-									<div class="salv-weekend-btn">
-										<span class="salv-wek-text sm-font inter-font-600 b-text">Weekend Mode</span>
-										<label class="salva-switch-btn switch plane-switch">
-											<input type="checkbox" id="togBtn">
-											<span class="week-first-class">
-												<span class="week-sec-class">
-													<svg viewBox="0 0 13 13">
-														<path d="M1.55989957,5.41666667 L5.51582215,5.41666667 L4.47015462,0.108333333 L4.47015462,0.108333333 C4.47015462,0.0634601974 4.49708054,0.0249592654 4.5354546,0.00851337035 L4.57707145,0 L5.36229752,0 C5.43359776,0 5.50087375,0.028779451 5.55026392,0.0782711996 L5.59317877,0.134368264 L7.13659662,2.81558333 L8.29565964,2.81666667 C8.53185377,2.81666667 8.72332694,3.01067661 8.72332694,3.25 C8.72332694,3.48932339 8.53185377,3.68333333 8.29565964,3.68333333 L7.63589819,3.68225 L8.63450135,5.41666667 L11.9308317,5.41666667 C12.5213171,5.41666667 13,5.90169152 13,6.5 C13,7.09830848 12.5213171,7.58333333 11.9308317,7.58333333 L8.63450135,7.58333333 L7.63589819,9.31666667 L8.29565964,9.31666667 C8.53185377,9.31666667 8.72332694,9.51067661 8.72332694,9.75 C8.72332694,9.98932339 8.53185377,10.1833333 8.29565964,10.1833333 L7.13659662,10.1833333 L5.59317877,12.8656317 C5.55725264,12.9280353 5.49882018,12.9724157 5.43174295,12.9907056 L5.36229752,13 L4.57707145,13 L4.55610333,12.9978962 C4.51267695,12.9890959 4.48069792,12.9547924 4.47230803,12.9134397 L4.47223088,12.8704208 L5.51582215,7.58333333 L1.55989957,7.58333333 L0.891288881,8.55114605 C0.853775374,8.60544678 0.798421006,8.64327676 0.73629202,8.65879796 L0.672314689,8.66666667 L0.106844414,8.66666667 L0.0715243949,8.66058466 L0.0715243949,8.66058466 C0.0297243066,8.6457608 0.00275502199,8.60729104 0,8.5651586 L0.00593007386,8.52254537 L0.580855011,6.85813984 C0.64492547,6.67265611 0.6577034,6.47392717 0.619193545,6.28316421 L0.580694768,6.14191703 L0.00601851064,4.48064746 C0.00203480725,4.4691314 0,4.45701613 0,4.44481314 C0,4.39994001 0.0269259152,4.36143908 0.0652999725,4.34499318 L0.106916826,4.33647981 L0.672546853,4.33647981 C0.737865848,4.33647981 0.80011301,4.36066329 0.848265401,4.40322477 L0.89131128,4.45169723 L1.55989957,5.41666667 Z" fill="currentColor"></path>
-													</svg>
-												</span>
-												<span class="street-middle"></span>
-												<span class="cloud"></span>
-												<span class="cloud two"></span>
-											</span>
-										</label>
-									</div>
-								</div>
-							</footer>
-						</div>
-						<!--right side salva content end here -->
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
-	<!--Salva page content end here -->
-<script src="../assets/js/jquery.min.js"></script>
-<script src="../assets/js/bootstrap.bundle.min.js"></script>
-<script src="../assets/js/ripple.js"></script>
-<script src="../assets/js/aos.js"></script>
-<script src="../assets/js/TweenMax.min.js"></script>
-<script src="../assets/js/custom.js"></script>
-<script src="../assets/js/main-ripple.js"></script>
-<script>
-  AOS.init();
-</script>
-</body>
+    <!--Salva page content start here -->
+    <div class="salva-page-wrap">
+      <section class="salva-fixed-content" id="contact_us">
+        <div class="container-fluid">
+          <div class="row home-content-row">
+            <!--Left side salva fixed image start here-->
+            <div
+              class="col-12 col-md-5 col-lg-4 col-xxl-5 salva-ripple salva-left-fixed-image p-0"
+            >
+              <h1 class="d-none">this is a image of salva fixed</h1>
+              <div
+                class="salva-home-image salva-ripple-image"
+                id="ripple"
+              ></div>
+              <div class="salva-weekend-image" id="ripple-two"></div>
+            </div>
+            <!--Left side salva fixed image end here -->
+            <!--right side salva content start here-->
+            <div
+              class="col-12 col-md-12 col-lg-8 col-xxl-7 salva-home-content p-0"
+            >
+              <div class="salva-about-wrap">
+                <!--header content start here -->
+                <header class="salva-header">
+                  <div class="container-fluid p-0">
+                    <div class="row">
+                      <div class="col-6 col-sm-6 col-md-4 col-lg-4">
+                        <a class="salva-logo" href="home.html">
+                          <img
+                            src="assets/images/logo/logoyadi.png"
+                            alt="this is a logo of slava"
+                          />
+                        </a>
+                      </div>
+                      <div class="col-6 col-sm-6 col-md-8 col-lg-8">
+                        <nav class="navbar salva-header-nav">
+                          <div class="d-flex">
+                            <input
+                              type="checkbox"
+                              id="navcheck"
+                              class="navcheck"
+                              role="button"
+                              title="menu"
+                              aria-pressed="true"
+                            />
+                            <label
+                              for="navcheck"
+                              aria-hidden="true"
+                              title="menu"
+                            >
+                              <span class="salv-burger">
+                                <span class="bar">
+                                  <span class="visuallyhidden">Menu</span>
+                                </span>
+                              </span>
+                            </label>
+                            <!--desktop screen menu design -->
+                            <ul id="menu" class="sal-menu-list">
+                              <li class="salv-menu-item">
+                                <a
+                                  href="home.html"
+                                  target="_self"
+                                  class="salv-menu-link"
+                                  >Home</a
+                                >
+                              </li>
+                              <li class="salv-menu-item">
+                                <a
+                                  href="about-us.html"
+                                  target="_self"
+                                  class="salv-menu-link second-color"
+                                  >About</a
+                                >
+                              </li>
+                              <li class="salv-menu-item">
+                                <a
+                                  href="portfolio.html"
+                                  target="_self"
+                                  class="salv-menu-link second-color"
+                                  >Portfolio</a
+                                >
+                              </li>
+                              <!-- <li class="salv-menu-item">
+                                <a
+                                  href="news.html"
+                                  target="_self"
+                                  class="salv-menu-link second-color"
+                                  >News</a
+                                >
+                              </li> -->
+                              <li class="salv-menu-item">
+                                <a
+                                  href="contact-us.html"
+                                  target="_self"
+                                  class="salv-menu-link active second-color"
+                                  >Contact</a
+                                >
+                              </li>
+                            </ul>
+                            <!--tablet screen menu design -->
+                            <div class="salv-menu-design-two">
+                              <div class="menu-design-wrap">
+                                <div class="salv-menu-profile">
+                                  <img
+                                    src="assets/images/logo/mhtv3d.png"
+                                    alt="this is profile image"
+                                  />
+                                </div>
+                                <div class="sakv-new-menu-social">
+                                  <ul class="salv-menu-social-list">
+                                    <li class="salv-menu-social-icon">
+                                      <a
+                                        href="https://www.facebook.com/triadi.mulyana.948"
+                                      >
+                                        <svg
+                                          width="10"
+                                          height="18"
+                                          viewBox="0 0 10 18"
+                                          fill="none"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                          <path
+                                            d="M6.66683 10.2498H8.75016L9.5835 6.9165H6.66683V5.24984C6.66683 4.3915 6.66683 3.58317 8.3335 3.58317H9.5835V0.783171C9.31183 0.747337 8.286 0.666504 7.20266 0.666504C4.94016 0.666504 3.3335 2.04734 3.3335 4.58317V6.9165H0.833496V10.2498H3.3335V17.3332H6.66683V10.2498Z"
+                                            fill="black"
+                                          />
+                                        </svg>
+                                      </a>
+                                    </li>
+                                    <!-- <li class="salv-menu-social-icon">
+                                      <a href="javascript:void(0);">
+                                        <svg
+                                          width="20"
+                                          height="20"
+                                          viewBox="0 0 20 20"
+                                          fill="none"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                          <mask
+                                            id="mask0_101_150"
+                                            style="mask-type: alpha"
+                                            maskUnits="userSpaceOnUse"
+                                            x="0"
+                                            y="0"
+                                            width="20"
+                                            height="20"
+                                          >
+                                            <path
+                                              d="M0 0H20V20H0V0Z"
+                                              fill="white"
+                                            />
+                                          </mask>
+                                          <g mask="url(#mask0_101_150)">
+                                            <path
+                                              d="M18.4683 4.71327C17.8321 4.99468 17.1574 5.1795 16.4666 5.26161C17.1947 4.82613 17.7397 4.14078 17.9999 3.33327C17.3166 3.73994 16.5674 4.02494 15.7866 4.17911C15.2621 3.61792 14.5669 3.24574 13.8091 3.12043C13.0512 2.99511 12.2732 3.12368 11.596 3.48615C10.9187 3.84862 10.3802 4.42468 10.0642 5.12477C9.74812 5.82486 9.67221 6.60976 9.84826 7.35744C8.46251 7.28798 7.10687 6.92788 5.86933 6.30049C4.63179 5.67311 3.54003 4.79248 2.66492 3.71577C2.35516 4.24781 2.19238 4.85263 2.19326 5.46827C2.19326 6.67661 2.80826 7.74411 3.74326 8.36911C3.18993 8.35169 2.64878 8.20226 2.16492 7.93327V7.9766C2.16509 8.78136 2.44356 9.56129 2.95313 10.1842C3.46269 10.807 4.17199 11.2345 4.96076 11.3941C4.4471 11.5333 3.90851 11.5538 3.38576 11.4541C3.60814 12.1468 4.04159 12.7526 4.62542 13.1867C5.20924 13.6208 5.9142 13.8614 6.64159 13.8749C5.91866 14.4427 5.0909 14.8624 4.20566 15.1101C3.32041 15.3577 2.39503 15.4285 1.48242 15.3183C3.0755 16.3428 4.93 16.8867 6.82409 16.8849C13.2349 16.8849 16.7408 11.5741 16.7408 6.96827C16.7408 6.81827 16.7366 6.66661 16.7299 6.51827C17.4123 6.02508 18.0013 5.41412 18.4691 4.71411L18.4683 4.71327Z"
+                                              fill="black"
+                                            />
+                                          </g>
+                                        </svg>
+                                      </a>
+                                    </li> -->
+                                    <li class="salv-menu-social-icon">
+                                      <a
+                                        href="https://instagram.com/triyadimulyana"
+                                      >
+                                        <svg
+                                          width="20"
+                                          height="20"
+                                          viewBox="0 0 20 20"
+                                          fill="none"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                          <mask
+                                            id="mask0_101_153"
+                                            style="mask-type: alpha"
+                                            maskUnits="userSpaceOnUse"
+                                            x="0"
+                                            y="0"
+                                            width="20"
+                                            height="20"
+                                          >
+                                            <path
+                                              d="M0 0H20V20H0V0Z"
+                                              fill="white"
+                                            />
+                                          </mask>
+                                          <g mask="url(#mask0_101_153)">
+                                            <path
+                                              d="M9.99984 7.49984C9.3368 7.49984 8.70091 7.76323 8.23207 8.23207C7.76323 8.70091 7.49984 9.3368 7.49984 9.99984C7.49984 10.6629 7.76323 11.2988 8.23207 11.7676C8.70091 12.2364 9.3368 12.4998 9.99984 12.4998C10.6629 12.4998 11.2988 12.2364 11.7676 11.7676C12.2364 11.2988 12.4998 10.6629 12.4998 9.99984C12.4998 9.3368 12.2364 8.70091 11.7676 8.23207C11.2988 7.76323 10.6629 7.49984 9.99984 7.49984ZM9.99984 5.83317C11.1049 5.83317 12.1647 6.27216 12.9461 7.05356C13.7275 7.83496 14.1665 8.89477 14.1665 9.99984C14.1665 11.1049 13.7275 12.1647 12.9461 12.9461C12.1647 13.7275 11.1049 14.1665 9.99984 14.1665C8.89477 14.1665 7.83496 13.7275 7.05356 12.9461C6.27216 12.1647 5.83317 11.1049 5.83317 9.99984C5.83317 8.89477 6.27216 7.83496 7.05356 7.05356C7.83496 6.27216 8.89477 5.83317 9.99984 5.83317ZM15.4165 5.62484C15.4165 5.9011 15.3068 6.16606 15.1114 6.36141C14.9161 6.55676 14.6511 6.6665 14.3748 6.6665C14.0986 6.6665 13.8336 6.55676 13.6383 6.36141C13.4429 6.16606 13.3332 5.9011 13.3332 5.62484C13.3332 5.34857 13.4429 5.08362 13.6383 4.88827C13.8336 4.69292 14.0986 4.58317 14.3748 4.58317C14.6511 4.58317 14.9161 4.69292 15.1114 4.88827C15.3068 5.08362 15.4165 5.34857 15.4165 5.62484ZM9.99984 3.33317C7.93817 3.33317 7.6015 3.339 6.64234 3.3815C5.989 3.41234 5.55067 3.49984 5.144 3.65817C4.78234 3.79817 4.5215 3.96567 4.244 4.244C3.98318 4.496 3.78263 4.80366 3.65734 5.144C3.499 5.55234 3.4115 5.98984 3.3815 6.64234C3.33817 7.56234 3.33317 7.884 3.33317 9.99984C3.33317 12.0615 3.339 12.3982 3.3815 13.3573C3.41234 14.0098 3.49984 14.449 3.65734 14.8548C3.799 15.2173 3.96567 15.4782 4.24234 15.7548C4.52317 16.0348 4.784 16.2023 5.14234 16.3407C5.554 16.4998 5.99234 16.5882 6.64234 16.6182C7.56234 16.6615 7.884 16.6665 9.99984 16.6665C12.0615 16.6665 12.3982 16.6607 13.3573 16.6182C14.009 16.5873 14.4482 16.4998 14.8548 16.3423C15.2157 16.2015 15.4782 16.034 15.7548 15.7573C16.0357 15.4765 16.2032 15.2157 16.3415 14.8573C16.4998 14.4465 16.5882 14.0073 16.6182 13.3573C16.6615 12.4373 16.6665 12.1157 16.6665 9.99984C16.6665 7.93817 16.6607 7.6015 16.6182 6.64234C16.5873 5.99067 16.4998 5.55067 16.3415 5.144C16.2159 4.80401 16.0157 4.49647 15.7557 4.244C15.5038 3.98304 15.1961 3.78248 14.8557 3.65734C14.4473 3.499 14.009 3.4115 13.3573 3.3815C12.4373 3.33817 12.1157 3.33317 9.99984 3.33317ZM9.99984 1.6665C12.264 1.6665 12.5465 1.67484 13.4348 1.7165C14.3223 1.75817 14.9265 1.89734 15.4582 2.104C16.0082 2.31567 16.4715 2.60234 16.9348 3.06484C17.3586 3.48142 17.6865 3.98533 17.8957 4.5415C18.1015 5.07234 18.2415 5.67734 18.2832 6.56484C18.3223 7.45317 18.3332 7.73567 18.3332 9.99984C18.3332 12.264 18.3248 12.5465 18.2832 13.4348C18.2415 14.3223 18.1015 14.9265 17.8957 15.4582C17.6871 16.0147 17.3591 16.5187 16.9348 16.9348C16.5181 17.3584 16.0143 17.6863 15.4582 17.8957C14.9273 18.1015 14.3223 18.2415 13.4348 18.2832C12.5465 18.3223 12.264 18.3332 9.99984 18.3332C7.73567 18.3332 7.45317 18.3248 6.56484 18.2832C5.67734 18.2415 5.07317 18.1015 4.5415 17.8957C3.98511 17.6869 3.48111 17.359 3.06484 16.9348C2.64101 16.5183 2.31311 16.0144 2.104 15.4582C1.89734 14.9273 1.75817 14.3223 1.7165 13.4348C1.67734 12.5465 1.6665 12.264 1.6665 9.99984C1.6665 7.73567 1.67484 7.45317 1.7165 6.56484C1.75817 5.6765 1.89734 5.07317 2.104 4.5415C2.31253 3.98499 2.64051 3.48094 3.06484 3.06484C3.48123 2.64086 3.98519 2.31295 4.5415 2.104C5.07317 1.89734 5.6765 1.75817 6.56484 1.7165C7.45317 1.67734 7.73567 1.6665 9.99984 1.6665Z"
+                                              fill="black"
+                                            />
+                                          </g>
+                                        </svg>
+                                      </a>
+                                    </li>
+                                    <!-- <li class="salv-menu-social-icon">
+                                      <a href="javascript:void(0);">
+                                        <svg
+                                          width="20"
+                                          height="20"
+                                          viewBox="0 0 20 20"
+                                          fill="none"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                          <mask
+                                            id="mask0_101_156"
+                                            style="mask-type: alpha"
+                                            maskUnits="userSpaceOnUse"
+                                            x="0"
+                                            y="0"
+                                            width="20"
+                                            height="20"
+                                          >
+                                            <path
+                                              d="M0 0H20V20H0V0Z"
+                                              fill="white"
+                                            />
+                                          </mask>
+                                          <g mask="url(#mask0_101_156)">
+                                            <path
+                                              d="M5.78353 4.16652C5.78331 4.60855 5.6075 5.03239 5.29478 5.34479C4.98207 5.6572 4.55806 5.83258 4.11603 5.83236C3.674 5.83214 3.25017 5.65633 2.93776 5.34361C2.62536 5.0309 2.44997 4.60688 2.4502 4.16486C2.45042 3.72283 2.62622 3.29899 2.93894 2.98659C3.25166 2.67419 3.67567 2.4988 4.1177 2.49902C4.55972 2.49924 4.98356 2.67505 5.29596 2.98777C5.60837 3.30049 5.78375 3.7245 5.78353 4.16652ZM5.83353 7.06652H2.5002V17.4999H5.83353V7.06652ZM11.1002 7.06652H7.78353V17.4999H11.0669V12.0249C11.0669 8.97486 15.0419 8.69152 15.0419 12.0249V17.4999H18.3335V10.8915C18.3335 5.74986 12.4502 5.94152 11.0669 8.46652L11.1002 7.06652Z"
+                                              fill="black"
+                                            />
+                                          </g>
+                                        </svg>
+                                      </a>
+                                    </li> -->
+                                  </ul>
+                                </div>
+                                <div class="salv-menu-list">
+                                  <ul class="salv-sec-menu-item">
+                                    <li class="salv-sec-menu-link">
+                                      <a
+                                        href="home.html"
+                                        class="slav-tb-menu-name"
+                                        target="_self"
+                                        >home</a
+                                      >
+                                    </li>
+                                    <li class="salv-sec-menu-link">
+                                      <a
+                                        href="about-us.html"
+                                        target="_self"
+                                        class="slav-tb-menu-name"
+                                        >about</a
+                                      >
+                                    </li>
+                                    <li class="salv-sec-menu-link">
+                                      <a
+                                        href="portfolio.html"
+                                        target="_self"
+                                        class="slav-tb-menu-name"
+                                        >portfolio</a
+                                      >
+                                    </li>
+                                    <!-- <li class="salv-sec-menu-link">
+                                      <a
+                                        href="news.html"
+                                        target="_self"
+                                        class="slav-tb-menu-name"
+                                        >news</a
+                                      >
+                                    </li> -->
+                                    <li class="salv-sec-menu-link">
+                                      <a
+                                        href="contact-us.html"
+                                        target="_self"
+                                        class="slav-tb-menu-name active"
+                                        >contact</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div class="salv-mob-copyright">
+                                  <p
+                                    class="salv-copyright-content mb-0 sm-font inter-font-400 b-text light-copyright"
+                                  >
+                                    Copyright © 2023 triyadimulyana ❤
+                                    <a
+                                      href="https://instagram.com/triyadimulyana"
+                                      class="b-text"
+                                      target="_blank"
+                                      >triyadimulyana</a
+                                    >
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+                <!--contact us content start here -->
+                <div class="salva-contact-us-content weekend-mode-hide">
+                  <div class="salv-inrto-content">
+                    <h2
+                      class="salv-about-title salv-home-title md-font b-text inter-font-900 mb-0"
+                      data-aos="flip-left"
+                      data-aos-easing="ease-out-cubic"
+                      data-aos-duration="2000"
+                    >
+                      Contact
+                    </h2>
+                    <p
+                      class="salv-about-desc mb-0 second-color inter-font-400"
+                      data-aos="fade-right"
+                      data-aos-offset="300"
+                      data-aos-easing="ease-in-sine"
+                    >
+                      Saat ini saya sedang mondok di Pesantren Miftahul Huda,
+                      menjalani pembelajaran Progrramming dan juga Mengaji
+                      Kitab. Untuk menghubungi saya, melalui kontak yang tertera
+                      di bawah. Namun respon yang di berikan mungkin sedikit
+                      lambat
+                    </p>
+                  </div>
+                  <!--get in touch content start here -->
+                  <div class="salv-cont-get-in">
+                    <h3
+                      class="salv-about-personla-title mb-0 b-text sm-md-font inter-font-700"
+                    >
+                      Hubungi
+                    </h3>
+                    <div class="salv-get-row row">
+                      <div
+                        class="col-12 col-sm-4 col-md-4 col-lg-4 mail-cont-col"
+                      >
+                        <div class="sal-get-in-wrap">
+                          <div class="salv-get-icon">
+                            <svg
+                              width="50"
+                              height="50"
+                              viewBox="0 0 50 50"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M39.625 12C41.4531 12 43 13.5469 43 15.375C43 16.5 42.4375 17.4844 41.5938 18.1172L26.3359 29.5781C25.4922 30.2109 24.4375 30.2109 23.5938 29.5781L8.33594 18.1172C7.49219 17.4844 7 16.5 7 15.375C7 13.5469 8.47656 12 10.375 12H39.625ZM22.2578 31.4062C23.875 32.6016 26.0547 32.6016 27.6719 31.4062L43 19.875V34.5C43 37.0312 40.9609 39 38.5 39H11.5C8.96875 39 7 37.0312 7 34.5V19.875L22.2578 31.4062Z"
+                                fill="black"
+                              />
+                            </svg>
+                          </div>
+                          <div class="salv-get-in-title">
+                            <a
+                              href="mailto:triadimulyana14@gmail.com"
+                              class="sal-get-mail inter-font-500 sm-md-font"
+                              >triadimulyana14@gmail.com</a
+                            >
+                          </div>
+                          <div class="go-corner">
+                            <div class="go-arrow"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="col-12 col-sm-4 col-md-4 col-lg-4 mail-phone-col"
+                      >
+                        <div class="sal-get-in-wrap">
+                          <div class="salv-get-icon">
+                            <svg
+                              width="50"
+                              height="50"
+                              viewBox="0 0 50 50"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M34.5 7.5H16.5C14.6016 7.5 13.125 9.04688 13.125 10.875V40.125C13.125 42.0234 14.6016 43.5 16.5 43.5H34.5C36.3281 43.5 37.875 42.0234 37.875 40.125V10.875C37.875 9.04688 36.3281 7.5 34.5 7.5ZM25.5 40.125C24.2344 40.125 23.25 39.1406 23.25 37.875C23.25 36.6797 24.2344 35.625 25.5 35.625C26.6953 35.625 27.75 36.6797 27.75 37.875C27.75 39.1406 26.6953 40.125 25.5 40.125Z"
+                                fill="black"
+                              />
+                            </svg>
+                          </div>
+                          <div class="salv-get-in-title">
+                            <a
+                              href="tel:+6285213145990"
+                              class="sal-get-mail inter-font-500 sm-md-font"
+                              >+62 85 213 145 990</a
+                            >
+                          </div>
+                          <div class="go-corner">
+                            <div class="go-arrow"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="col-12 col-sm-4 col-md-4 col-lg-4 mail-addr-col"
+                      >
+                        <div class="sal-get-in-wrap">
+                          <div class="salv-get-icon">
+                            <svg
+                              width="50"
+                              height="50"
+                              viewBox="0 0 50 50"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M23.8125 42.6562C20.1562 38.0859 12 27.1875 12 21C12 13.5469 17.9766 7.5 25.5 7.5C32.9531 7.5 39 13.5469 39 21C39 27.1875 30.7734 38.0859 27.1172 42.6562C26.2734 43.7109 24.6562 43.7109 23.8125 42.6562ZM25.5 25.5C27.9609 25.5 30 23.5312 30 21C30 18.5391 27.9609 16.5 25.5 16.5C22.9688 16.5 21 18.5391 21 21C21 23.5312 22.9688 25.5 25.5 25.5Z"
+                                fill="black"
+                              />
+                            </svg>
+                          </div>
+                          <div class="salv-get-in-title">
+                            <span class="sal-get-mail inter-font-500 sm-md-font"
+                              >Manonjaya, Tasikmalaya</span
+                            >
+                          </div>
+                          <div class="go-corner">
+                            <div class="go-arrow"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--message me content start here -->
+                  <div class="salv-message-me">
+                    <h4
+                      class="salv-about-personla-title mb-0 b-text sm-md-font inter-font-700"
+                    >
+                      message me
+                    </h4>
+                    <div class="salv-message-me row">
+                      <div
+                        class="col-12 col-sm-6 col-md-6 col-lg-6 map-contact-form-col"
+                      >
+                        <div class="formbold-main-wrapper">
+                          <div class="formbold-form-wrapper">
+                            <form method="POST" class="salv-conatct-us">
+                              <div class="formbold-mb-5 salv-contact-field">
+                                <input
+                                  type="text"
+                                  name="name"
+                                  id="name"
+                                  placeholder="Name"
+                                  class="formbold-form-input inter-font-500"
+                                  required
+                                />
+                                <span class="salv-field-icon">
+                                  <svg
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 18 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <g clip-path="url(#clip0_101_727)">
+                                      <path
+                                        d="M2 18C2 16.1814 2.72245 14.4372 4.00841 13.1513C5.29437 11.8653 7.03852 11.1429 8.85714 11.1429C10.6758 11.1429 12.4199 11.8653 13.7059 13.1513C14.9918 14.4372 15.7143 16.1814 15.7143 18H14C14 16.636 13.4582 15.3279 12.4937 14.3635C11.5292 13.399 10.2211 12.8571 8.85714 12.8571C7.49317 12.8571 6.18507 13.399 5.22059 14.3635C4.25612 15.3279 3.71429 16.636 3.71429 18H2ZM8.85714 10.2857C6.01571 10.2857 3.71429 7.98429 3.71429 5.14286C3.71429 2.30143 6.01571 0 8.85714 0C11.6986 0 14 2.30143 14 5.14286C14 7.98429 11.6986 10.2857 8.85714 10.2857ZM8.85714 8.57143C10.7514 8.57143 12.2857 7.03714 12.2857 5.14286C12.2857 3.24857 10.7514 1.71429 8.85714 1.71429C6.96286 1.71429 5.42857 3.24857 5.42857 5.14286C5.42857 7.03714 6.96286 8.57143 8.85714 8.57143Z"
+                                        fill="black"
+                                      />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_101_727">
+                                        <rect
+                                          width="18"
+                                          height="18"
+                                          fill="#ffffff"
+                                        />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </span>
+                                <div class="salv-input-bar-line"></div>
+                              </div>
+                              <div class="formbold-mb-5 salv-contact-field">
+                                <input
+                                  type="email"
+                                  name="email"
+                                  id="email"
+                                  placeholder="Email"
+                                  class="formbold-form-input inter-font-500"
+                                  required
+                                />
+                                <div class="salv-input-bar-line"></div>
+                                <span class="salv-field-icon">
+                                  <svg
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 18 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <g clip-path="url(#clip0_101_734)">
+                                      <path
+                                        d="M0.9 1H17.1C17.3387 1 17.5676 1.09482 17.7364 1.2636C17.9052 1.43239 18 1.66131 18 1.9V16.3C18 16.5387 17.9052 16.7676 17.7364 16.9364C17.5676 17.1052 17.3387 17.2 17.1 17.2H0.9C0.661305 17.2 0.432387 17.1052 0.263604 16.9364C0.0948211 16.7676 0 16.5387 0 16.3V1.9C0 1.66131 0.0948211 1.43239 0.263604 1.2636C0.432387 1.09482 0.661305 1 0.9 1ZM16.2 4.8142L9.0648 11.2042L1.8 4.7944V15.4H16.2V4.8142ZM2.2599 2.8L9.0549 8.7958L15.7518 2.8H2.2599Z"
+                                        fill="black"
+                                      />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_101_734">
+                                        <rect
+                                          width="18"
+                                          height="18"
+                                          fill="#ffffff"
+                                        />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </span>
+                              </div>
+                              <div class="formbold-mb-5 salv-contact-field">
+                                <input
+                                  type="text"
+                                  name="subject"
+                                  id="subject"
+                                  placeholder="Subject"
+                                  class="formbold-form-input inter-font-500"
+                                  required
+                                />
+                                <div class="salv-input-bar-line"></div>
+                                <span class="salv-field-icon">
+                                  <svg
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 18 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <g clip-path="url(#clip0_101_741)">
+                                      <path
+                                        d="M12.7487 6.66761L11.3324 5.25131L2.00325 14.5805V15.9967H3.41955L12.7487 6.66761ZM14.165 5.25131L15.5813 3.83501L14.165 2.41871L12.7487 3.83501L14.165 5.25131ZM4.2489 18H0V13.7501L13.4568 0.293263C13.6447 0.105487 13.8994 0 14.165 0C14.4306 0 14.6853 0.105487 14.8731 0.293263L17.7067 3.12686C17.8945 3.31469 18 3.56942 18 3.83501C18 4.10061 17.8945 4.35533 17.7067 4.54316L4.2499 18H4.2489Z"
+                                        fill="black"
+                                      />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_101_741">
+                                        <rect
+                                          width="18"
+                                          height="18"
+                                          fill="#ffffff"
+                                        />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </span>
+                              </div>
+                              <div class="formbold-mb-5 salv-contact-field">
+                                <textarea
+                                  rows="4"
+                                  cols="12"
+                                  name="message"
+                                  id="message"
+                                  placeholder="Message"
+                                  class="formbold-form-input inter-font-500"
+                                ></textarea>
+                                <div
+                                  class="salv-input-bar-line textarea-line"
+                                ></div>
+                                <span class="salv-field-icon">
+                                  <svg
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 18 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <g clip-path="url(#clip0_101_748)">
+                                      <path
+                                        d="M14.3102 9.1406L13.6288 8.45926L4.08807 18H0V13.911L10.9025 3.00754L16.3542 8.45926C16.5349 8.63998 16.6363 8.88506 16.6363 9.1406C16.6363 9.39614 16.5349 9.64122 16.3542 9.82194L9.54074 16.6363L8.17709 15.2737L14.3102 9.1406ZM12.2661 7.09657L10.9025 5.73388L1.92742 14.7089V16.0726H3.29011L12.2661 7.09657ZM14.9915 0.282162L17.7178 3.00754C17.8985 3.18826 18 3.43334 18 3.68888C18 3.94442 17.8985 4.1895 17.7178 4.37023L16.3542 5.73388L12.2661 1.64485L13.6288 0.282162C13.8095 0.101494 14.0546 0 14.3102 0C14.5657 0 14.8108 0.101494 14.9915 0.282162Z"
+                                        fill="black"
+                                      />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_101_748">
+                                        <rect
+                                          width="18"
+                                          height="18"
+                                          fill="#ffffff"
+                                        />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </span>
+                              </div>
+                              <div>
+                                <!-- <button class="formbold-btn salv-send-btn w-text inter-font-600 sm-font">salv-send-btn</button> -->
+                                <button
+                                  class="salv-home-get-touch salv-send-btn"
+                                >
+                                  <span class="salv-get-text"
+                                    >send message</span
+                                  >
+                                </button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="col-12 col-sm-6 col-md-6 col-lg-6 map-img-col"
+                      >
+                        <div class="salv-contat-us-map">
+                          <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3152.332975548547!2d144.9601134!3d-37.805669!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642ccdc6aaaab%3A0x2173400951f0012c!2sLevel%203%2F551%20Swanston%20St%2C%20Carlton%20VIC%203053%2C%20Australia!5e0!3m2!1sen!2sin!4v1673948052812!5m2!1sen!2sin"
+                            width="600"
+                            height="450"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                          ></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--weekend-mode start here-->
+                <div class="salva-weekend-mode" id="weekend_mode">
+                  <div class="salv-inrto-content">
+                    <h3
+                      class="salv-about-title salv-home-title md-font b-text inter-font-900 mb-0"
+                    >
+                      Diri saya sebagai Santri 👨‍💻
+                    </h3>
+                  </div>
+                  <div class="salv-week-desc">
+                    <p
+                      class="mt-0 mb-0 sal-week-desc-one inter-font-400 sm-md-font-two"
+                    >
+                      Di dalam portofolio saya, saya ingin berbagi kisah
+                      perjalanan hidup yang menginspirasi. Seorang remaja dari
+                      desa kecil di Subang, setelah menyelesaikan pendidikan di
+                      SMKN 1 Subang pada tahun 2020, memilih jalur yang tak
+                      biasa dengan bekerja bertani jamur tiram selama enam
+                      bulan. Tidak lama kemudian, pada tahun 2022, saya
+                      mengambil keputusan besar untuk melanjutkan pendidikan
+                      agama di Pesantren Miftahul Huda Manonjaya.
+                    </p>
+                    <p
+                      class="mb-0 mt-0 sal-week-desc-two inter-font-400 sm-md-font-two"
+                    >
+                      Meskipun awalnya tidak tinggal di asrama, saya ditempatkan
+                      sebagai tamirul masjid, bertugas sebagai pembersih area
+                      masjid. Meskipun pekerjaan ini terlihat sederhana,
+                      dedikasi saya dalam menjalankannya dan mengejar ilmu agama
+                      tidak pernah luntur. Di sela-sela tugas membersihkan
+                      masjid, saya memanfaatkan waktu luang untuk belajar dan
+                      berpartisipasi dalam kegiatan pesantren. Keterlibatan saya
+                      dalam dunia agama semakin meningkat ketika saya
+                      diperkenalkan pada dunia teknologi oleh seorang ahli
+                      multimedia di pesantren.
+                    </p>
+                    <p
+                      class="mt-0 mb-0 sal-week-desc-three inter-font-400 sm-md-font-two"
+                    >
+                      Di bawah bimbingannya, saya diberi peluang untuk belajar
+                      pembuatan aplikasi Android, yang akhirnya menjadi satu
+                      pencapaian penting dalam hidup saya. Keterampilan baru ini
+                      membuka jalan bagi saya untuk menciptakan aplikasi yang
+                      memberikan manfaat kepada masyarakat desa saya.
+                      Keberhasilan ini bukan hanya membanggakan saya, tetapi
+                      juga mendapatkan rasa hormat dan dukungan dari lingkungan
+                      sekitar. Kisah hidup saya adalah bukti bahwa dengan tekad,
+                      kerja keras, dan dukungan dari sekitar, kita dapat
+                      mencapai impian kita, bahkan berasal dari latar belakang
+                      yang sederhana. Saya berharap cerita ini dapat
+                      menginspirasi orang lain untuk tidak pernah menyerah dalam
+                      mengejar cita-cita mereka, meskipun dihadapkan pada
+                      tantangan berat.
+                    </p>
+                  </div>
+                  <div class="salv-drop-mail">
+                    <div class="salv-drop-mail-wrap">
+                      <h4 class="mb-0 drop-mail-title inter-font-400">
+                        Kirim email ke:
+                      </h4>
+                      <a
+                        href="mailto:pediahuda@gmail.com"
+                        class="salv-mail-text inter-font-900"
+                        >triadimulyana14@gmail.com</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!--social icon start here -->
+                <div class="salv-social-wrap">
+                  <div class="salv-social-content">
+                    <ul class="salv-social-list">
+                      <li class="salv-social-icon">
+                        <a href="https://www.facebook.com/triadi.mulyana.948">
+                          <svg
+                            width="10"
+                            height="18"
+                            viewBox="0 0 10 18"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M6.66683 10.2498H8.75016L9.5835 6.9165H6.66683V5.24984C6.66683 4.3915 6.66683 3.58317 8.3335 3.58317H9.5835V0.783171C9.31183 0.747337 8.286 0.666504 7.20266 0.666504C4.94016 0.666504 3.3335 2.04734 3.3335 4.58317V6.9165H0.833496V10.2498H3.3335V17.3332H6.66683V10.2498Z"
+                              fill="black"
+                            ></path>
+                          </svg>
+                        </a>
+                      </li>
+                      <!-- <li class="salv-social-icon">
+                        <a href="javascript:void(0);">
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <mask
+                              id="mask0_601_150"
+                              style="mask-type: alpha"
+                              maskUnits="userSpaceOnUse"
+                              x="0"
+                              y="0"
+                              width="20"
+                              height="20"
+                            >
+                              <path d="M0 0H20V20H0V0Z" fill="white"></path>
+                            </mask>
+                            <g mask="url(#mask0_601_150)">
+                              <path
+                                d="M18.4683 4.71327C17.8321 4.99468 17.1574 5.1795 16.4666 5.26161C17.1947 4.82613 17.7397 4.14078 17.9999 3.33327C17.3166 3.73994 16.5674 4.02494 15.7866 4.17911C15.2621 3.61792 14.5669 3.24574 13.8091 3.12043C13.0512 2.99511 12.2732 3.12368 11.596 3.48615C10.9187 3.84862 10.3802 4.42468 10.0642 5.12477C9.74812 5.82486 9.67221 6.60976 9.84826 7.35744C8.46251 7.28798 7.10687 6.92788 5.86933 6.30049C4.63179 5.67311 3.54003 4.79248 2.66492 3.71577C2.35516 4.24781 2.19238 4.85263 2.19326 5.46827C2.19326 6.67661 2.80826 7.74411 3.74326 8.36911C3.18993 8.35169 2.64878 8.20226 2.16492 7.93327V7.9766C2.16509 8.78136 2.44356 9.56129 2.95313 10.1842C3.46269 10.807 4.17199 11.2345 4.96076 11.3941C4.4471 11.5333 3.90851 11.5538 3.38576 11.4541C3.60814 12.1468 4.04159 12.7526 4.62542 13.1867C5.20924 13.6208 5.9142 13.8614 6.64159 13.8749C5.91866 14.4427 5.0909 14.8624 4.20566 15.1101C3.32041 15.3577 2.39503 15.4285 1.48242 15.3183C3.0755 16.3428 4.93 16.8867 6.82409 16.8849C13.2349 16.8849 16.7408 11.5741 16.7408 6.96827C16.7408 6.81827 16.7366 6.66661 16.7299 6.51827C17.4123 6.02508 18.0013 5.41412 18.4691 4.71411L18.4683 4.71327Z"
+                                fill="black"
+                              ></path>
+                            </g>
+                          </svg>
+                        </a>
+                      </li> -->
+                      <li class="salv-social-icon">
+                        <a href="https://instagram.com/triyadimulyana">
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <mask
+                              id="mask0_602_153"
+                              style="mask-type: alpha"
+                              maskUnits="userSpaceOnUse"
+                              x="0"
+                              y="0"
+                              width="20"
+                              height="20"
+                            >
+                              <path d="M0 0H20V20H0V0Z" fill="white"></path>
+                            </mask>
+                            <g mask="url(#mask0_602_153)">
+                              <path
+                                d="M9.99984 7.49984C9.3368 7.49984 8.70091 7.76323 8.23207 8.23207C7.76323 8.70091 7.49984 9.3368 7.49984 9.99984C7.49984 10.6629 7.76323 11.2988 8.23207 11.7676C8.70091 12.2364 9.3368 12.4998 9.99984 12.4998C10.6629 12.4998 11.2988 12.2364 11.7676 11.7676C12.2364 11.2988 12.4998 10.6629 12.4998 9.99984C12.4998 9.3368 12.2364 8.70091 11.7676 8.23207C11.2988 7.76323 10.6629 7.49984 9.99984 7.49984ZM9.99984 5.83317C11.1049 5.83317 12.1647 6.27216 12.9461 7.05356C13.7275 7.83496 14.1665 8.89477 14.1665 9.99984C14.1665 11.1049 13.7275 12.1647 12.9461 12.9461C12.1647 13.7275 11.1049 14.1665 9.99984 14.1665C8.89477 14.1665 7.83496 13.7275 7.05356 12.9461C6.27216 12.1647 5.83317 11.1049 5.83317 9.99984C5.83317 8.89477 6.27216 7.83496 7.05356 7.05356C7.83496 6.27216 8.89477 5.83317 9.99984 5.83317ZM15.4165 5.62484C15.4165 5.9011 15.3068 6.16606 15.1114 6.36141C14.9161 6.55676 14.6511 6.6665 14.3748 6.6665C14.0986 6.6665 13.8336 6.55676 13.6383 6.36141C13.4429 6.16606 13.3332 5.9011 13.3332 5.62484C13.3332 5.34857 13.4429 5.08362 13.6383 4.88827C13.8336 4.69292 14.0986 4.58317 14.3748 4.58317C14.6511 4.58317 14.9161 4.69292 15.1114 4.88827C15.3068 5.08362 15.4165 5.34857 15.4165 5.62484ZM9.99984 3.33317C7.93817 3.33317 7.6015 3.339 6.64234 3.3815C5.989 3.41234 5.55067 3.49984 5.144 3.65817C4.78234 3.79817 4.5215 3.96567 4.244 4.244C3.98318 4.496 3.78263 4.80366 3.65734 5.144C3.499 5.55234 3.4115 5.98984 3.3815 6.64234C3.33817 7.56234 3.33317 7.884 3.33317 9.99984C3.33317 12.0615 3.339 12.3982 3.3815 13.3573C3.41234 14.0098 3.49984 14.449 3.65734 14.8548C3.799 15.2173 3.96567 15.4782 4.24234 15.7548C4.52317 16.0348 4.784 16.2023 5.14234 16.3407C5.554 16.4998 5.99234 16.5882 6.64234 16.6182C7.56234 16.6615 7.884 16.6665 9.99984 16.6665C12.0615 16.6665 12.3982 16.6607 13.3573 16.6182C14.009 16.5873 14.4482 16.4998 14.8548 16.3423C15.2157 16.2015 15.4782 16.034 15.7548 15.7573C16.0357 15.4765 16.2032 15.2157 16.3415 14.8573C16.4998 14.4465 16.5882 14.0073 16.6182 13.3573C16.6615 12.4373 16.6665 12.1157 16.6665 9.99984C16.6665 7.93817 16.6607 7.6015 16.6182 6.64234C16.5873 5.99067 16.4998 5.55067 16.3415 5.144C16.2159 4.80401 16.0157 4.49647 15.7557 4.244C15.5038 3.98304 15.1961 3.78248 14.8557 3.65734C14.4473 3.499 14.009 3.4115 13.3573 3.3815C12.4373 3.33817 12.1157 3.33317 9.99984 3.33317ZM9.99984 1.6665C12.264 1.6665 12.5465 1.67484 13.4348 1.7165C14.3223 1.75817 14.9265 1.89734 15.4582 2.104C16.0082 2.31567 16.4715 2.60234 16.9348 3.06484C17.3586 3.48142 17.6865 3.98533 17.8957 4.5415C18.1015 5.07234 18.2415 5.67734 18.2832 6.56484C18.3223 7.45317 18.3332 7.73567 18.3332 9.99984C18.3332 12.264 18.3248 12.5465 18.2832 13.4348C18.2415 14.3223 18.1015 14.9265 17.8957 15.4582C17.6871 16.0147 17.3591 16.5187 16.9348 16.9348C16.5181 17.3584 16.0143 17.6863 15.4582 17.8957C14.9273 18.1015 14.3223 18.2415 13.4348 18.2832C12.5465 18.3223 12.264 18.3332 9.99984 18.3332C7.73567 18.3332 7.45317 18.3248 6.56484 18.2832C5.67734 18.2415 5.07317 18.1015 4.5415 17.8957C3.98511 17.6869 3.48111 17.359 3.06484 16.9348C2.64101 16.5183 2.31311 16.0144 2.104 15.4582C1.89734 14.9273 1.75817 14.3223 1.7165 13.4348C1.67734 12.5465 1.6665 12.264 1.6665 9.99984C1.6665 7.73567 1.67484 7.45317 1.7165 6.56484C1.75817 5.6765 1.89734 5.07317 2.104 4.5415C2.31253 3.98499 2.64051 3.48094 3.06484 3.06484C3.48123 2.64086 3.98519 2.31295 4.5415 2.104C5.07317 1.89734 5.6765 1.75817 6.56484 1.7165C7.45317 1.67734 7.73567 1.6665 9.99984 1.6665Z"
+                                fill="black"
+                              ></path>
+                            </g>
+                          </svg>
+                        </a>
+                      </li>
+                      <!-- <li class="salv-social-icon">
+                        <a href="javascript:void(0);">
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <mask
+                              id="mask0_604_156"
+                              style="mask-type: alpha"
+                              maskUnits="userSpaceOnUse"
+                              x="0"
+                              y="0"
+                              width="20"
+                              height="20"
+                            >
+                              <path d="M0 0H20V20H0V0Z" fill="white"></path>
+                            </mask>
+                            <g mask="url(#mask0_604_156)">
+                              <path
+                                d="M5.78353 4.16652C5.78331 4.60855 5.6075 5.03239 5.29478 5.34479C4.98207 5.6572 4.55806 5.83258 4.11603 5.83236C3.674 5.83214 3.25017 5.65633 2.93776 5.34361C2.62536 5.0309 2.44997 4.60688 2.4502 4.16486C2.45042 3.72283 2.62622 3.29899 2.93894 2.98659C3.25166 2.67419 3.67567 2.4988 4.1177 2.49902C4.55972 2.49924 4.98356 2.67505 5.29596 2.98777C5.60837 3.30049 5.78375 3.7245 5.78353 4.16652ZM5.83353 7.06652H2.5002V17.4999H5.83353V7.06652ZM11.1002 7.06652H7.78353V17.4999H11.0669V12.0249C11.0669 8.97486 15.0419 8.69152 15.0419 12.0249V17.4999H18.3335V10.8915C18.3335 5.74986 12.4502 5.94152 11.0669 8.46652L11.1002 7.06652Z"
+                                fill="black"
+                              ></path>
+                            </g>
+                          </svg>
+                        </a>
+                      </li> -->
+                    </ul>
+                    <div
+                      class="salv-follow-us-content second-color ex-sm-font inter-font-600"
+                    >
+                      follow me
+                    </div>
+                  </div>
+                </div>
+                <!--footer content start here -->
+                <footer class="salv-footer-content" id="slv-footer">
+                  <div class="salv-footer-wrap">
+                    <p
+                      class="salv-copyright-content mb-0 sm-font inter-font-400 b-text light-copyright"
+                    >
+                      Copyright © 2023 Salva ❤
+                      <a
+                        href="https://themeforest.net/user/the_krishna/portfolio"
+                        class="b-text"
+                        target="_blank"
+                        >the_krishna</a
+                      >
+                    </p>
+                    <div class="salv-weekend-btn">
+                      <span class="salv-wek-text sm-font inter-font-600 b-text"
+                        >Mode Cerpen</span
+                      >
+                      <label class="salva-switch-btn switch plane-switch">
+                        <input type="checkbox" id="togBtn" />
+                        <span class="week-first-class">
+                          <span class="week-sec-class">
+                            <svg viewBox="0 0 13 13">
+                              <path
+                                d="M1.55989957,5.41666667 L5.51582215,5.41666667 L4.47015462,0.108333333 L4.47015462,0.108333333 C4.47015462,0.0634601974 4.49708054,0.0249592654 4.5354546,0.00851337035 L4.57707145,0 L5.36229752,0 C5.43359776,0 5.50087375,0.028779451 5.55026392,0.0782711996 L5.59317877,0.134368264 L7.13659662,2.81558333 L8.29565964,2.81666667 C8.53185377,2.81666667 8.72332694,3.01067661 8.72332694,3.25 C8.72332694,3.48932339 8.53185377,3.68333333 8.29565964,3.68333333 L7.63589819,3.68225 L8.63450135,5.41666667 L11.9308317,5.41666667 C12.5213171,5.41666667 13,5.90169152 13,6.5 C13,7.09830848 12.5213171,7.58333333 11.9308317,7.58333333 L8.63450135,7.58333333 L7.63589819,9.31666667 L8.29565964,9.31666667 C8.53185377,9.31666667 8.72332694,9.51067661 8.72332694,9.75 C8.72332694,9.98932339 8.53185377,10.1833333 8.29565964,10.1833333 L7.13659662,10.1833333 L5.59317877,12.8656317 C5.55725264,12.9280353 5.49882018,12.9724157 5.43174295,12.9907056 L5.36229752,13 L4.57707145,13 L4.55610333,12.9978962 C4.51267695,12.9890959 4.48069792,12.9547924 4.47230803,12.9134397 L4.47223088,12.8704208 L5.51582215,7.58333333 L1.55989957,7.58333333 L0.891288881,8.55114605 C0.853775374,8.60544678 0.798421006,8.64327676 0.73629202,8.65879796 L0.672314689,8.66666667 L0.106844414,8.66666667 L0.0715243949,8.66058466 L0.0715243949,8.66058466 C0.0297243066,8.6457608 0.00275502199,8.60729104 0,8.5651586 L0.00593007386,8.52254537 L0.580855011,6.85813984 C0.64492547,6.67265611 0.6577034,6.47392717 0.619193545,6.28316421 L0.580694768,6.14191703 L0.00601851064,4.48064746 C0.00203480725,4.4691314 0,4.45701613 0,4.44481314 C0,4.39994001 0.0269259152,4.36143908 0.0652999725,4.34499318 L0.106916826,4.33647981 L0.672546853,4.33647981 C0.737865848,4.33647981 0.80011301,4.36066329 0.848265401,4.40322477 L0.89131128,4.45169723 L1.55989957,5.41666667 Z"
+                                fill="currentColor"
+                              ></path>
+                            </svg>
+                          </span>
+                          <span class="street-middle"></span>
+                          <span class="cloud"></span>
+                          <span class="cloud two"></span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+              <!--right side salva content end here -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--Salva page content end here -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/ripple.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/main-ripple.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
